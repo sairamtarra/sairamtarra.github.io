@@ -28,32 +28,6 @@ Showcases projects, skills, education, certifications, and a working contact for
 
 ---
 
-## 📁 Project Structure
-sairam-portfolio/
-├── public/ # Static assets (favicon, etc.)
-├── src/
-│ ├── assets/ # Images and icons
-│ ├── components/ # React components (each with .jsx and .css)
-│ │ ├── Navbar.jsx
-│ │ ├── Hero.jsx
-│ │ ├── About.jsx
-│ │ ├── Projects.jsx
-│ │ ├── Skills.jsx
-│ │ ├── EducationCertifications.jsx
-│ │ ├── Contact.jsx
-│ │ └── Footer.jsx
-│ ├── App.jsx
-│ ├── App.css
-│ ├── data.js # Centralised data for the whole site
-│ ├── index.css # Global styles
-│ └── main.jsx # Entry point
-├── index.html # Vite entry HTML
-├── package.json
-├── vite.config.js
-└── README.md
-
----
-
 ## Getting Started
 
 ### Prerequisites
