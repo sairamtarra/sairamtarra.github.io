@@ -1,0 +1,73 @@
+.hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  padding: 6rem 2rem 4rem;
+  color: #fff;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon{
+  font-size: 14px;
+  color: #6c63ff;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-greeting { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.hero-name { font-size: 3.8rem; font-weight: 700; line-height: 1.2; }
+.hero-role { font-size: 1.8rem; font-weight: 500; color: #bbf7d0; margin-bottom: 1rem; }
+.hero-subtitle { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; }
+.hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.hero-contact { display: flex; gap: 2rem; flex-wrap: wrap; }
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-primary { background: #ffffff; color: #1e3a8a; }
+.btn-primary:hover { background: #e0e7ff; transform: translateY(-2px); }
+.btn-outline { border: 2px solid #ffffff; background: transparent; color: #fff; }
+.btn-outline:hover { background: #fff; color: #1e3a8a; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero-container { flex-direction: column-reverse; text-align: center; }
+  .hero-buttons { justify-content: center; }
+  .hero-contact { justify-content: center; }
+}

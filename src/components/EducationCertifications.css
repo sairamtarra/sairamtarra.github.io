@@ -1,0 +1,82 @@
+.edu-cert {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.edu-cert-row {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* EDUCATION CARD */
+.education-card {
+  flex: 1 1 400px;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.edu-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.education-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.edu-branch {
+  color: #4b5563;
+  margin: 0.3rem 0;
+}
+
+.edu-college {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.edu-meta {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* CERTIFICATIONS */
+.certifications-list {
+  flex: 1 1 300px;
+}
+
+.cert-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.cert-title {
+  font-weight: 600;
+}
+
+.cert-issuer {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
