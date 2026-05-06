@@ -1,16 +1,27 @@
+import { useState } from 'react';
 import data from '../data';
 import {FaLinkedin, FaGithub, FaDownload} from "react-icons/fa";
 import './Navbar.css';
 
 const Navbar = () => {
   const { personal } = data;
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="nav-container">
         <a href="#hero" className="nav-logo">
           {personal.firstName}
         </a>
-        <ul className="nav-links">
+        <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+        >
+          {menuOpen ? '✕' : '☰'}
+        </button>
+        
+        <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>

@@ -69,16 +69,33 @@
   box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
 }
 
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1e3a8a;
+}
+
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .nav-links {
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0.5rem;
-  }
-  .link-text {
-    display: inline;
-  }
-  .icon {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 0;
   }
 }

@@ -77,3 +77,9 @@
     margin-top: 60px;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-row {
+    flex-direction: column;
+  }
+}
