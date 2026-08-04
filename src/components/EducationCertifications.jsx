@@ -18,9 +18,9 @@ const EducationCertifications = () => {
         <p className="edu-college">{education.college}</p>
         
         <div className="edu-meta">
-            <span>{education.duration}</span>
-            <span>{education.cgpa}</span>
-        </div>
+            {data.education.duration && <span>{data.education.duration}</span>}
+            <span>{data.education.cgpa}</span>
+          </div>
     </div>
 
     {/* CERTIFICATIONS */}

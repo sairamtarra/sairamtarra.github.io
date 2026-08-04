@@ -24,19 +24,18 @@ import oracle from "./assets/java.png";
 import tcs from "./assets/tcs_ion_logo.jpeg";
 import aws from "./assets/aws-cloud.png";
 
-
 const data = {
   personal: {
     name: "Sairam Tarra",
     firstName: "Home",
-    role: "Java Full Stack Developer",
+    role: "Java Developer & Faculty Trainee",
     subtitle:
-      "I build responsive, user‑friendly and scalable web applications with clean code and great user experience.",
+      "I build responsive, user‑friendly backend systems and enjoy teaching future developers.",
     phone: "+91 9381092195",
     email: "sairamtarra02@gmail.com",
     linkedin: "https://linkedin.com/in/sairamtarra",
     github: "https://github.com/sairamtarra",
-    resumeLink: "https://drive.google.com/file/d/1MJgm2zr9IRs3vyeECJHmao_hbcpqsQIA/view?usp=drivesdk",
+    resumeLink: "https://drive.google.com/file/d/1XcBUJ01RvgJKLeWsixsSUrYUBN0EUojc/view?usp=drivesdk",
     profilePic: profileImg,
   },
   about: {
@@ -45,45 +44,55 @@ const data = {
     highlights: ["Clean Code", "Responsive", "Problem Solver"],
     laptopImage: laptopImage,
   },
+  // New Experience section added to align with the video instructions
+  experience: [
+    {
+      title: "Software Development Faculty Trainee",
+      company: "NxtWave - Hyderabad",
+      location: "Hyderabad",
+      date: "2026 - Present",
+      description: [
+        "Teaching and mentoring students in Frontend Technologies and core programming concepts.",
+        "Developing curriculum materials and conducting live coding sessions for better student understanding.",
+        "Collaborating with the Instructors team to create a robust learning environment."
+      ]
+    },
+    {
+      title: "Active Member & Mentor",
+      company: "Java Club (INTEC Program)",
+      location: "Gayatri Vidya Parishad College",
+      date: "2023 - 2025",
+      description: [
+        "Mentored 20+ junior students on core Java concepts, OOPs, and problem-solving strategies.",
+        "Conducted coding sessions and peer code reviews to foster a collaborative learning environment."
+      ]
+    }
+  ],
+  // Only 3 finished projects kept, as requested
   projects: [
     {
       id: 1,
-      title: "Multi-Vendor E-Commerce",
+      title: "Multivendor E-Commerce Backend",
       description:
-        "Full‑stack e‑commerce platform with JWT authentication.",
-      tech: ["Java", "Spring Boot", "Spring Security", "JWT", "JPA", "MySQL"],
+        "As the sole developer, I built backend modules for product management, cart, orders, and users using Spring Boot. Used Hibernate and JPA for database operations and tested with Postman.",
+      tech: ["Java", "Spring Boot", "Spring Data JPA", "Hibernate", "REST APIs", "MySQL", "Maven"],
       image: ecommerce,
     },
     {
       id: 2,
-      title: "Digital Banking Platform",
+      title: "Expense Manager",
       description:
-        "Secure banking backend with transactions & role‑based access.",
-      tech: ["Spring Boot", "JPA", "MySQL", "JWT"],
-      image: banking,
+        "As the sole developer, I built a complete CRUD expense tracking backend with Spring Boot to manage daily income and expenses, connected to MySQL.",
+      tech: ["Java", "Spring Boot", "Spring Data JPA", "REST APIs", "MySQL", "Maven"],
+      image: banking, // Reusing existing images so you don't have to download new ones
     },
     {
       id: 3,
-      title: "AI Developer Assistant",
+      title: "Microservices – Order & Payment Service",
       description:
-        "AI‑powered backend for code explanation & debugging.",
-      tech: ["Spring Boot", "REST APIs", "Spring AI"],
-      image: ai,
-    },
-    // Additional hidden projects
-    {
-      id: 4,
-      title: "ChatApp",
-      description: "Real‑time messaging app with rooms and file sharing.",
-      tech: ["Socket.io", "React", "Node.js"],
-      image: "https://via.placeholder.com/300x200?text=ChatApp",
-    },
-    {
-      id: 5,
-      title: "Blogify",
-      description: "A full‑stack blogging platform with markdown support.",
-      tech: ["Next.js", "Prisma", "PostgreSQL"],
-      image: "https://via.placeholder.com/300x200?text=Blogify",
+        "As the sole developer, I built a microservices-based application with separate Order and Payment services. Used OpenFeign for inter-service communication and followed REST-based architecture.",
+      tech: ["Java", "Spring Boot", "Spring Data JPA", "OpenFeign", "REST APIs", "Maven"],
+      image: ai, // Reusing existing images
     },
   ],
   skills: {
@@ -118,7 +127,7 @@ const data = {
     degree: "Bachelor of Technology",
     branch: "Electronics and Communication Engineering",
     college: "Gayatri Vidya Parishad College for Degree and PG Courses (A)",
-    duration: "2021 - 2025",
+    duration: null, // Removed exact graduation dates per video instructions
     cgpa: "8.01 CGPA"
   },
 
